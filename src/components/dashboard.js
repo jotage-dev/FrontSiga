@@ -18,14 +18,15 @@ function Dashboard() {
         const principal = document.querySelector(".principal");
 
 
-        botao.addEventListener("click", () => {
-            botao.classList.toggle("ativo")
-            menuLateral.classList.toggle("ativo")
-            conteudo.classList.toggle("ativo")
-            background.classList.toggle("ativo")
-            principal.classList.toggle("ativo")
-        })
+        botao.addEventListener("click", (e) => {
+    e.stopPropagation(); // ⛔ impede que o clique "vaze" para o background
 
+    botao.classList.toggle("ativo")
+    menuLateral.classList.toggle("ativo")
+    conteudo.classList.toggle("ativo")
+    background.classList.toggle("ativo")
+    principal.classList.toggle("ativo")
+})
         background.addEventListener("click", () => {
             botao.classList.remove("ativo")
             menuLateral.classList.remove("ativo")
