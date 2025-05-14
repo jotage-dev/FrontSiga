@@ -1,36 +1,36 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./components/login";
-import SignUp from "./components/signup";
-import { RequireToken } from './components/Auth.js'
+import Login from "./routes/login";
+import SignUp from "./routes/signup";
+import { RequireToken } from './routes/Auth.js'
 
-import Dashboard from "./components/dashboard";
-import Home from "./components/home";
+import Dashboard from "./routes/dashboard";
+import Home from "./routes/home";
 
-import Employee from "./components/employee";
-import AddEmployee from "./components/addemployee";
-import EditEmployee from './components/editemployee';
+import Employee from "./routes/employee";
+import AddEmployee from "./routes/addemployee";
+import EditEmployee from './routes/editemployee';
 
-import Folhapagamento from "./components/folhapagamento.js";
+import Folhapagamento from "./routes/folhapagamento.js";
 
-import ProjetoCompleto from "./components/projetocompleto.js";
-import AddProjetoCompleto from "./components/addprojetocompleto.js";
-import EditProjetoCompleto from "./components/editprojetocompleto.js";
-import ViewProjetoCompleto from "./components/viewprojetocompleto.js";
+import ProjetoCompleto from "./routes/projetocompleto.js";
+import AddProjetoCompleto from "./routes/addprojetocompleto.js";
+import EditProjetoCompleto from "./routes/editprojetocompleto.js";
+import ViewProjetoCompleto from "./routes/viewprojetocompleto.js";
 
 
-import Grafico from "./components/grafico";
-import Fichaprojeto from "./components/fichaprojeto.js";
-import Graficobarra from "./components/graficobarra.js";
+import Grafico from "./routes/grafico";
+import Fichaprojeto from "./routes/fichaprojeto.js";
+import Graficobarra from "./routes/graficobarra.js";
 
-import Gantt2 from "./components/gantt2.js";
-import Gantt3 from "./components/gantt3.js";
-import Gantt4 from "./components/gantt4.js";
+import Gantt2 from "./routes/gantt2.js";
+import Gantt3 from "./routes/gantt3.js";
+import Gantt4 from "./routes/gantt4.js";
 
-import Secretaria from "./components/secretaria.js";
-import Fichasecretario from "./components/fichasecretario.js";
-import EditSecretaria from "./components/editsecretaria.js";
-import Perfil from "./components/perfil.js";
+import Secretaria from "./routes/secretaria.js";
+import Fichasecretario from "./routes/fichasecretario.js";
+import EditSecretaria from "./routes/editsecretaria.js";
+import Perfil from "./routes/perfil.js";
 
 
 function App() {
