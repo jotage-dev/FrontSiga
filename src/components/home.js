@@ -10,6 +10,7 @@ import { Bar } from "react-chartjs-2";
 import "./styles.css";
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { Link } from "react-router-dom";
 
 ChartJS.register(
   BarElement,
@@ -154,6 +155,7 @@ function Home() {
     <h5>ESTRATIFICAÇÃO DOS PROJETOS POR SECRETARIA</h5>
 
     <div className="main-cards">
+      <Link to="/folhapagamento">
       <div className="card">
         <div className="card-inner">
           <h5>Número de Projetos</h5>
@@ -163,7 +165,7 @@ function Home() {
           <h5>Total: {totalprojeto}</h5>
         </div>
       </div>
-
+      </Link>
       <div className="card">
         <div className="card-inner">
           <h5>Valor estimado dos projetos</h5>

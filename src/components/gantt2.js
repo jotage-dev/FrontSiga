@@ -12,6 +12,7 @@ import "./styles.css";
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
+
 ChartJS.register(
     BarElement,
     CategoryScale,
@@ -178,7 +179,8 @@ function Gantt() {
             <div className='containerdashboard'>
                 <h5>ESTRATIFICAÇÃO DO VALOR DOS PROJETOS POR SECRETARIA</h5>
                 <div className='main-cards'>
-
+                
+                    
                     <div className='card'>
                         <div className='card-inner'>
                             <h5>Número de Projetos</h5>
@@ -188,7 +190,7 @@ function Gantt() {
                             <h5>Total: {totalprojeto}</h5>
                         </div>
                     </div>
-
+               
                     <div className='card'>
                         <div className='card-inner'>
                             <h5>Valor estimado dos projetos</h5>

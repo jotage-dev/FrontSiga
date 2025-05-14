@@ -24,12 +24,12 @@
 
 /* Variáveis globais */
 :root {
-  --primary-color: #003366;     /* Azul escuro */
-  --secondary-color: #cc0000;   /* Vermelho forte */
-  --accent-color: #ffffff;      /* Branco */
+  --primary-color: #003366;     
+  --secondary-color: #cc0000;   
+  --accent-color: #ffffff;      
   --text-color: #ffffff;
-  --background-color: #e6ecf3;  /* Azul claro suave */
-  --card-background: #f2f6fc;   /* Fundo dos cards azul bem claro */
+  --background-color: #e6ecf3;  
+  --card-background: #f2f6fc;   
   --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -37,8 +37,8 @@
 .principal,
 .conteudo {
  background-color: var(--primary-color);
-  min-height: 100vh; /* Preenche toda a altura da tela */
-  width: 100%;        /* Garante largura total */
+  min-height: 100vh; 
+  width: 100%;       
   transition: all 0.5s ease;
   display: flex;
   flex-direction: column; 
@@ -165,17 +165,18 @@
 
 /* Container principal (Cards + Dashboard) */
 .container-principal {
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 20px;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 23%, rgba(0, 212, 255, 1) 100%);
+ background-color: #e6f2ff; /* azul muito claro e suave */
+background-size: cover;
+background-position: center;
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+padding: 20px;
+
 }
 
 /* Dashboard ajustado */
@@ -187,10 +188,9 @@
     width: 100vw;
     height: 100%;
     border: 4px solid white;
-    /*deixa a tela embaçada*/
     backdrop-filter: blur(20px);
     border-radius: 1px;
-    /*faz um espaçamento de 10 em cima e embaixo e um espaçamento de 40 nas laterais*/
+   
     padding: 10px 40px;
     cursor: pointer;
 }
@@ -198,15 +198,19 @@
 
     background-color: transparent;
     border: 4px solid black;
-    /*deixa a tela embaçada*/
+ 
     
     border-radius: 10px;
-    /*faz um espaçamento de 30 em cima e embaixo e um espaçamento de 40 nas laterais*/
+   
     padding: 24px 24px;
   
     cursor: pointer;
 }
 /* Container geral de gráfico */
+a {
+  color: inherit; /* Herda a cor do elemento pai */
+  text-decoration: none; /* Remove o sublinhado */
+}
 .Gra {
     display: flex;
     flex-direction: column;
@@ -286,17 +290,14 @@
 }
 .containerdashboardlogin,
 .containerdashboardeditar {
-  background-color: transparent;
-    border: 4px solid black;
-    /*deixa a tela embaçada*/
-    backdrop-filter: blur(20px);
-    border-radius: 10px;
-    /*faz um espaçamento de 30 em cima e embaixo e um espaçamento de 40 nas laterais*/
-    padding: 20px 24px;
-    background: linear-gradient(90deg, rgb(0, 36, 19) 0%, rgba(9, 9, 121, 1) 23%, rgba(0, 212, 255, 1) 100%);
-    cursor: pointer;
-    max-width: 900px;
-    margin: 0 auto;
+ background-color: #add8e6; /* azul claro */
+border: 2px solid #000; /* borda preta mais fina para suavizar */
+backdrop-filter: blur(10px); /* redução no blur para menos exagero */
+border-radius: 12px;
+padding: 20px 24px;
+cursor: pointer;
+max-width: 900px;
+margin: 0 auto;
 }
 
 /* Formulários */

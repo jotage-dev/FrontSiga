@@ -141,9 +141,9 @@ function Graficobarra() {
             <div className='containerdashboard'>
                 <h5>PAINEL QUANTITATIVO DOS PROJETOS POR SECRETARIA</h5>
                 <div className='main-cards'>
-
+                    
                     <div className='card'>
-                        <div className='card-inner'>
+                        <div className='card-inner'> 
                             <h5>Número de Projetos</h5>
                         </div>
                         <hr />
@@ -151,7 +151,7 @@ function Graficobarra() {
                             <h5>Total: {totalprojeto}</h5>
                         </div>
                     </div>
-
+                    
                     <div className='card'>
                         <div className='card-inner'>
                             <h5>Valor dos projetos</h5>

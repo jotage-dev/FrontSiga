@@ -19,7 +19,7 @@ function Dashboard() {
 
 
         botao.addEventListener("click", (e) => {
-    e.stopPropagation(); // ⛔ impede que o clique "vaze" para o background
+    e.stopPropagation(); 
 
     botao.classList.toggle("ativo")
     menuLateral.classList.toggle("ativo")
